@@ -1,0 +1,216 @@
+@import url(https://maxcdn.bootstrapcdn.com/bootstrap/5.3.2/css/bootstrap.min.css);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    }
+
+.navbar {
+    background-color: var(--white);
+        }
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: #333;
+        }
+
+.navbar-brand img {
+    margin-right: 10px;
+        }
+
+.title {
+    font-size: 24px;
+    margin: 20px 0;
+        }
+
+.title i {
+            font-size: 32px;
+            margin-right: 5px;
+            color: #3498db;
+        }
+
+.description {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+.container {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+        }
+
+.form-control {
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: border 0.3s ease-in-out;
+    font-size: 18px;    
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+textarea {
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: border 0.3s ease-in-out;
+    font-size: 18px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+input[type="datetime-local"] {
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: border 0.3s ease-in-out;
+    font-size: 18px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.btn-primary {
+            background-color: #1b8da4;
+            border: none;
+            padding: 10px 20px;
+            color: #fff;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+.btn-primary:hover {
+            background-color: #2980b9;
+        }
+
+.task-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            padding: 10px;
+            margin: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+.task-item.done {
+            background-color: #f0f0f0;
+        }
+
+.done .task-label {
+        text-decoration: line-through;
+        color: #999;
+    }
+
+.task-label {
+            flex: 1;
+            font-size: 18px;
+        }
+
+.task-deadline {
+            font-size: 14px;
+            color: #777;
+        }
+
+.task-status[data-status="On Progress"] {
+    color: blue; 
+}
+
+.task-status[data-status="Done"] {
+    color: rgb(48, 216, 48);
+}
+
+.task-desc {
+    margin-top: 10px;
+}
+
+.task-actions a {
+            text-decoration: none;
+            margin-left: 10px;
+        }
+
+.text-orange {
+            color: #e67e22;
+        }
+
+.text-red {
+            color: #e74c3c;
+        }
+
+.alert-info {
+            background-color: #1b8da4;
+            color: #fff;
+            padding: 10px;
+            border-radius: 3px;
+            text-align: center;
+        }
+
+.search-box{
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.input-search{
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: #22a6b3;
+  padding-right: 40px;
+  color:#000000;
+}
+
+.input-search::placeholder{
+  color:rgba(0, 0, 0, 0.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.btn-search{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color:#ffffff ;
+  background-color:#22a6b3;;
+  pointer-events: painted;  
+}
+
+.btn-search:focus ~ .input-search{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(0, 0, 0, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+
+.input-search:focus{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(0, 0, 0, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
